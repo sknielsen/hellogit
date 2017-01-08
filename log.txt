@@ -1,0 +1,70 @@
+cfhowes@cfhowes-ubuntu:~/clients/hackbright/source/hellogit$ git commit -m "ignore emacs ~ files"
+[master 59aa10f] ignore emacs ~ files
+ 1 file changed, 2 insertions(+)
+cfhowes@cfhowes-ubuntu:~/clients/hackbright/source/hellogit$ git push
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 320 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local objects.
+To git@github.com:hackbrightacademy/hellogit.git
+   233613f..59aa10f  master -> master
+cfhowes@cfhowes-ubuntu:~/clients/hackbright/source/hellogit$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	shape.json
+
+nothing added to commit but untracked files present (use "git add" to track)
+cfhowes@cfhowes-ubuntu:~/clients/hackbright/source/hellogit$ git add shape.json
+cfhowes@cfhowes-ubuntu:~/clients/hackbright/source/hellogit$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   shape.json
+
+cfhowes@cfhowes-ubuntu:~/clients/hackbright/source/hellogit$ git commit -m "add the specification for a Triangle shape"
+[master 6a070b9] add the specification for a Triangle shape
+ 1 file changed, 5 insertions(+)
+ create mode 100644 shape.json
+cfhowes@cfhowes-ubuntu:~/clients/hackbright/source/hellogit$ git push
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 397 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To git@github.com:hackbrightacademy/hellogit.git
+   59aa10f..6a070b9  master -> master
+cfhowes@cfhowes-ubuntu:~/clients/hackbright/source/hellogit$
+
+
+
+
+
+
+
+
+
+
+
+*****************************************************************************
+FETCH:
+*****************************************************************************
+cfhowes@cfhowes-ubuntu:~/Downloads/hellogit$ git fetch
+remote: Counting objects: 6, done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 6 (delta 2), reused 5 (delta 1), pack-reused 0
+Unpacking objects: 100% (6/6), done.
+From github.com:hackbrightacademy/hellogit
+   233613f..6a070b9  master     -> origin/master
+cfhowes@cfhowes-ubuntu:~/Downloads/hellogit$ git rebase origin/master
+First, rewinding head to replay your work on top of it...
+Fast-forwarded master to origin/master.
+cfhowes@cfhowes-ubuntu:~/Downloads/hellogit$
+
+*****************************************************************************
