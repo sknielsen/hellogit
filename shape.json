@@ -1,5 +1,6 @@
 {
-  "number_of_sides": 4,
-  "name": "Square",
-  "fill_color": grey
+    "number_of_sides": 4,
+    "name": "Square",
+    "type": "Shape",
+    "fill_color": grey
 }
