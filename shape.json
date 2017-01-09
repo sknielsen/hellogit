@@ -2,5 +2,5 @@
     "number_of_sides": 5,
     "name": "Pentagon",
     "type": "Shape",
-    "fill_color": grey
+    "fill_color": cross
 }
